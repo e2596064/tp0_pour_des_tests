@@ -1,0 +1,75 @@
+style.css
+
+/* ── reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── variables ── */
+:root {
+  --bg:     #f5f4f0;
+  --fg:     #1a1a18;
+  --muted:  #9e9c94;
+  --radius: 4px;
+  --gap:    1.5rem;
+}
+
+/* ── base ── */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ── typographie ── */
+h1, h2, h3 {
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.25rem, 3vw, 2rem); }
+h3 { font-size: 1.125rem; }
+
+p {
+  max-width: 65ch;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+/* ── utilitaires ── */
+.container {
+  width: min(90%, 960px);
+  margin-inline: auto;
+  padding-block: var(--gap);
+}
+
+.flex   { display: flex; gap: var(--gap); }
+.center { text-align: center; place-items: center; }
+
+/* ── séparateur ── */
+hr {
+  border: none;
+  border-top: 1px solid var(--fg);
+  width: 2rem;
+  margin: var(--gap) 0;
+}
