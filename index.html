@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #f5f4f0;
+      --fg: #1a1a18;
+      --muted: #9e9c94;
+      --accent: #1a1a18;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--fg);
+      font-family: 'Georgia', serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    main {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 4rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 0.875rem;
+      color: var(--muted);
+      font-family: 'Courier New', monospace;
+      letter-spacing: 0.05em;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--fg);
+      width: 2rem;
+      margin: 1.5rem auto;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Bonjour.</h1>
+    <hr>
+    <p>page en construction</p>
+  </main>
+</body>
+</html>
+
